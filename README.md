@@ -1,6 +1,3 @@
-# CoderHouseE1
-Primera entrega del curso AI Engineering
-
 # Unified Async LLM Client
 
 **Pre-entrega 1 — Cliente de LLM robusto y asíncrono**
