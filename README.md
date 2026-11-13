@@ -69,17 +69,19 @@ Desde la carpeta del proyecto:
 ```powershell
 py -3.14 -m venv .venv
 ```
+<img width="569" height="35" alt="image" src="https://github.com/user-attachments/assets/c52f7739-1c39-4373-b7cc-d911ec0c2e43" />
 
 Activar el entorno:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
+<img width="568" height="45" alt="image" src="https://github.com/user-attachments/assets/ec1c25b0-4409-4532-af8d-87162cf1fae6" />
 
 ### 2. Instalar las dependencias
 
 ```powershell
-python -m pip install -r requirements.txt
+py -m pip install -r requirements.txt
 ```
 
 Las dependencias principales son `openai`, `anthropic`, `pydantic` y `python-dotenv`. También se utiliza `pytest` para realizar pruebas.
