@@ -55,7 +55,7 @@ La implementación utiliza una clase base abstracta llamada `BaseLLMClient`, que
 
 ## Requisitos
 
-- Python 3.12.
+- Python 3.12. (En este caso se uso la version 3.14)
 - Acceso a la API de OpenAI.
 - Acceso a la API de Anthropic.
 - Claves API válidas para ambos proveedores.
@@ -67,7 +67,7 @@ La implementación utiliza una clase base abstracta llamada `BaseLLMClient`, que
 Desde la carpeta del proyecto:
 
 ```powershell
-py -3.12 -m venv .venv
+py -3.14 -m venv .venv
 ```
 
 Activar el entorno:
@@ -130,6 +130,10 @@ response = await manager.generate(messages)
 
 Devuelve una respuesta estructurada mediante `ModelResponse`, incluyendo el texto generado, el proveedor, el modelo y los datos disponibles de uso de tokens.
 
+<img width="637" height="80" alt="image" src="https://github.com/user-attachments/assets/eab162da-be89-40ea-9397-0ebde2b5f301" />
+
+<img width="641" height="164" alt="image" src="https://github.com/user-attachments/assets/c7838b16-22c1-4600-80ed-bb21dab2b973" />
+
 ### Generación mediante streaming
 
 ```python
@@ -138,6 +142,11 @@ async for fragmento in manager.stream(messages):
 ```
 
 Entrega los fragmentos a medida que llegan desde la API, sin esperar a que finalice toda la generación.
+
+<img width="635" height="30" alt="image" src="https://github.com/user-attachments/assets/93a4c532-c7e0-4baf-b894-5ad3ea63d8e0" />
+
+<img width="632" height="104" alt="image" src="https://github.com/user-attachments/assets/cf2fc673-bf96-4bb9-8dbf-d6e9f22a17cf" />
+
 
 ## Resultados de ejecución
 
@@ -166,6 +175,8 @@ Resultado obtenido:
 6 passed in 2.47s
 ```
 
+<img width="638" height="44" alt="image" src="https://github.com/user-attachments/assets/b81e6588-ccaf-47df-896f-0cf48e8083db" />
+
 Las seis pruebas automatizadas se completaron correctamente.
 
 Estas pruebas verifican casos de validación. Las llamadas reales a las APIs se comprobaron mediante el script `main.py`.
@@ -175,6 +186,7 @@ Para consultar individualmente los tests:
 ```powershell
 python -m pytest -v
 ```
+<img width="638" height="151" alt="image" src="https://github.com/user-attachments/assets/4590ed03-293f-437d-9680-16ff6815e4c8" />
 
 ## Manejo de errores
 
